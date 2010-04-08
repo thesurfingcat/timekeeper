@@ -1,0 +1,503 @@
+/* Used for Paging*/
+
+a.page, span.page {
+  padding: 4px 6px;
+}
+
+a.page {
+  margin: 0 3px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #0063dc;
+}
+
+a.page:hover {
+  border: 1px solid #0063dc;
+  background-color: #93CCFF;
+  color: #fff;
+}
+
+span.disabled_page {
+  color: #b1aab1;
+} 
+
+
+span.current_page {
+  color: #ff0084;
+}
+
+.dateselect{
+	display:inline-block;
+}
+
+/*Styling the course info table (courseinstance helper) Tim Harris 11th June 2009*/
+.course_info{
+	width:100%;
+	border: 1px solid #93ccff;
+	margin-bottom:0px;
+}
+
+/*Styling a course title */
+
+.coursetitle {color: #ccc;}
+
+/* Styling a courseinstance form Edited by mearso 2009-05-08 */
+
+fieldset {border: 1px solid #93ccff;
+	background-color: #d8edff;margin:2em 0;
+}
+
+.editpage {display:block;
+ font-weight:bold;
+ float:left;
+ clear:left;
+ width:15em;
+ padding-right:1em;
+ text-align:right;
+ }
+
+.editpageWide {display:block;
+ font-weight:bold;
+ float:left;
+ clear:left;
+ width:20em;
+ padding-right:1em;
+ text-align:right;
+ }
+
+.editpageNarrow {display:block;
+ font-weight:bold;
+ float:left;
+ clear:left;
+ width:8em;
+ padding-right:1em;
+ text-align:right;
+ }
+
+.searchpage {display:block;
+ font-weight:bold;
+ float:left;
+ clear:left;
+ width:10em;
+ padding-right:1em;
+ text-align:right;
+ }
+
+.mid-bar {
+	font-family:Arial;
+	font-weight:bold;
+	font-size:1.5em;
+	background-color:#163C5D;
+	color: #D8EDFF;
+ }
+
+.abbreviation {display:inline-block;
+ font-weight:bold;
+ float:left;
+ clear:left;
+ width:15em;
+ padding-right:1em;
+ text-align:right;
+ }
+
+
+select, button, input {display: block; margin-bottom: 10px;}
+
+#new_courseinstance label{display:block;
+ font-weight:bold;
+ float:left;
+ clear:left;
+ width:15em;
+ padding-right:1em;
+ text-align:right;
+ }
+
+
+select, button, input {display: block; margin-bottom: 10px;}
+
+#new_courseinstance .submit{width: 10em;display: block;margin-left:16em;
+}
+
+br{clear:both;}
+
+
+/* Login Page  Edited by mearso 2009-05-11*/
+
+
+body#login {
+	background: #0b1010 url(/images/admit-bg.jpg) repeat-x 0 top;
+}
+
+
+.loginbox {
+  font-size:1em;
+  text-align: center;
+  border: 1px solid #b9c9d6;
+  margin-top: 4em;
+  background: #d8edff;
+}
+
+.loginbox a{border-bottom:none;}
+
+p.loginimage a {
+		text-indent: -5000px;
+}
+
+/* Using image as login button */
+
+
+a.loginlink {
+	text-decoration: none;
+	display: block;
+	height: 100px;
+	background:  url(/images/login.jpg) no-repeat center 5px;
+}
+
+
+a.loginlink:hover {
+	background:  url(/images/login.jpg) no-repeat center -100px;
+}
+
+/* Pushing h1 out to the left and using an image instead */
+
+.loginbox h1 {
+	text-indent: -3000px;
+	background: url(/images/Admitlogo.jpg) no-repeat center center;
+	line-height: 110px;
+}
+
+
+body {
+margin:0;	background: #488cbd url(/images/admit-bg.jpg) repeat-x 0 top;
+}
+
+/* Styling form error box */
+
+#errorExplanation {
+	background-color: #fff;
+	border: 2px solid #ffc8c9;
+	padding-left: 1em;
+	padding-top: 0;
+	margin: 1em 1em;
+}
+
+#errorExplanation li{
+	background-color: #fff;
+
+	margin:.3em 0;
+}
+
+#errorExplanation h2{
+	margin-top: 1ex;
+	color: #fb003f;
+}
+
+#errorExplanation p{
+	color: #5384ab;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.5em;
+	margin-bottom: .5em;
+	border-bottom: 1px solid #93ccff;
+}
+
+#errorExplanation ul{
+	color: #163c5d;
+	font-size: 1.2em;
+}
+
+/* Adding a graphic to placs where users can add things */
+
+
+.addlink{
+	background: url(/images/chalkwork/16x16/PNG/Add.png) no-repeat 2px center #fff;;
+	padding: 5px 5px 5px 24px;
+	font-size: 1.6em;
+	border: 1px solid #93ccff;
+}
+
+.backlink{
+	background: url(/images/chalkwork/16x16/PNG/arrow-left.png) no-repeat 2px center #fff;;
+	padding: 5px 5px 5px 24px;
+	font-size: 1.6em;
+	border: 1px solid #93ccff;
+}
+
+.showlink, .hidelink{
+	background: url(/images/chalkwork/16x16/PNG/magnifier.png) no-repeat 2px center #fff;;
+	padding: 5px 5px 5px 24px;
+	font-size: 1.6em;
+}
+
+.showlink{
+	border: 1px solid #93ccff;
+}
+.ucas_update{
+    background: url(/images/chalkwork/16x16/PNG/Refresh.png) no-repeat 2px center #fff;;
+	padding: 5px 5px 5px 24px;
+	font-size: 1.6em;
+	border: 1px solid #93ccff;
+}
+
+.closelink{
+	background: url(/images/chalkwork/16x16/PNG/Close.png) no-repeat 2px center #fff;;
+	padding: 5px 5px 5px 24px;
+	font-size: 1.6em;
+}
+
+.decisionlink{
+    background: url(/images/chalkwork/24x24/PNG/Confirm.png) no-repeat 2px center ;
+	padding: 5px 5px 5px 30px;
+	font-size: 1.6em;
+	border: 1px solid #93ccff;
+	margin-left: 5px;
+}
+
+.printlink{
+    background: url(/images/chalkwork/24x24/PNG/Print.png) no-repeat 2px center #fff;;
+	padding: 5px 5px 5px 30px;
+	font-size: 1.6em;
+	border: 1px solid #93ccff;
+	margin-left: 5px;
+}
+
+.sendlink{
+    background: url(/images/chalkwork/24x24/PNG/Confirm.png) no-repeat 2px center ;
+	padding: 5px 5px 5px 30px;
+	font-size: 1.6em;
+	border: 1px solid #93ccff;
+}
+
+.searchbutton{
+    background: url(/images/chalkwork/16x16/PNG/Search.png) no-repeat 2px center #fff;
+	padding: 5px 5px 5px 24px;
+	font-size: 1.6em;
+	border: 1px solid #93ccff;
+	align: right;
+	margin-left: 120px;
+}    
+
+.returnlink{
+	float:right;
+	text-decoration: none;
+	background: url(/images/chalkwork/16x16/PNG/Search.png) no-repeat 2px center #fff;     
+	padding: 0px 5px 0px 24px;  
+}
+
+#conditions select {
+ display: inline;
+}
+
+#conditions button {
+ display: inline;
+}
+
+#conditions input {
+ display: inline;
+}     
+
+#freetext{
+	background: #fff;
+	padding: 5px;
+	border: 0.1em solid;
+	border-color: #9c9c9c;
+	width: 50em;
+} 
+ element.style {
+background-color:#FFFFFF;
+color:#990000;
+}  
+
+/* Sub Menu for UCAS and Direct Apps*/
+.droplinebar ul{
+margin: 0;
+padding: 0;
+float: left;
+width: 100%;
+font: 12px Arial;
+background: transparent url("../images/subNavBlue.gif") center center repeat-x;
+}
+
+.droplinebar ul li{   
+background:transparent url("../images/zoneDivider.gif") no-repeat scroll 100%; 
+display:block;
+float:left;
+margin:0;
+padding:0 3px 0 0;
+}
+
+.droplinebar ul li a{
+float: left;
+color: white;
+padding: 9px 11px;
+text-decoration: none;
+}
+
+.droplinebar ul li a:hover, .droplinebar ul li .current{ 
+color: white;
+background:transparent url("../images/Nav_opacity.png") repeat-x scroll 0 ;
+}                     
+
+
+/* SINGLE PROGRESS BAR */
+
+.loadingBar{
+	padding: 5px 5px 5px 30px;
+	font-size: 1.6em;
+	border: 1px solid #93ccff;
+	margin-left: 15px;
+	background:url(/images/ajax-loader.gif) no-repeat 0 0;
+}
+.loadingBar span{
+	padding: 5px 5px 5px 30px;
+	font-size: 1.6em;
+	border: 1px solid #93ccff;
+	margin-left: 15px;
+	background:url(/images/bar.gif) no-repeat 0 0;*/
+}
+.loadingBar em{
+	padding: 5px 5px 5px 30px;
+	font-size: 1.6em;
+	border: 1px solid #93ccff;
+	margin-left: 15px;
+	background:url(/images/bg_cover.gif) repeat-x 0 0;
+}
+
+.progressBar{
+	width:216px;
+	height:41px;
+	background:url(/images/bg_bar.gif) no-repeat 0 0;
+	position:relative;
+}
+.progressBar span{
+	position:absolute;
+	display:block;
+	width:200px;
+	height:25px;
+	background:url(/images/bar.gif) no-repeat 0 0;*/
+	top:8px;
+	left:8px;
+	overflow:hidden;
+	text-indent:-8000px;
+}
+.progressBar em{
+	position:absolute;
+	display:block;
+	width:200px;
+	height:25px;
+	background:url(/images/bg_cover.gif) repeat-x 0 0;
+	top:0;
+	width: 100%;
+}
+
+.progress{
+	padding: 0px 0px 0px 0px;
+	font-size: 1.1em;
+	float:left;
+	clear:left;
+	text-decoration:none;
+	margin-right:0.5em;
+	margin-left:0.5em;
+	margin-top:0.1em;
+}
+
+/* Styling Flash[:notice] Box */
+
+#flashBox {
+	background-color: #D8EDFF;
+	border: 2px solid #93ccff;
+	font-size: 1.1em;
+	margin-top: 1em;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+/* Pagination */
+.pagination {
+margin:3px;
+padding:4px; 
+}
+.pagination a {
+border:1px solid #AAAADD;
+margin:2px;
+padding:4px 6px;
+text-decoration:none;
+}
+.pagination a:hover, .pagination a:active {
+background-color:#93CCFF;
+border:1px solid #0063DC;
+color:#FFFFFF; 
+}
+.pagination span.current {
+background-color: gray;
+border:1px solid #000099;
+color:#FFFFFF;
+font-weight:bold;
+margin:2px;
+padding:4px 6px;
+}
+.pagination span.disabled {
+border:1px solid #EEEEEE;
+color:#B1AAB1;
+margin:2px;
+padding:4px 6px;
+}   
+
+.userdetails {
+float: right;	
+padding: 10px;
+background-color: #D8EDFF;  
+/*-webkit-border-radius: 8px;*/    
+/*-moz-border-radius: 8px;*/      
+border: 0.5px solid #2D75B5;
+}   
+
+.whitebox {
+background-color:white; 
+width:500px; 
+border:1px solid black; 
+padding:15px
+}
+
+.warning{
+	color: red;
+	font-size: 1.2em;
+	float: right;	
+	padding: 10px;
+	background-color: #D8EDFF;  
+	/*-webkit-border-radius: 8px;*/    
+	/*-moz-border-radius: 8px;*/      
+	border: 0.5px solid #2D75B5;
+	span:100%;
+}
+
+.bad{
+	color: red;
+	font-size: 1.2em;	
+	span:100%;
+	display:inline-block;
+}
+
+.good{
+	color: green;
+	font-size: 1.2em;	
+	span:100%;
+	display:inline-block;
+}
+
+.inlink{
+	background: url(/images/chalkwork/32x32/PNG/Close.png) no-repeat 2px center #fff;;
+	padding: 5px 5px 5px 40px;
+	font-size: 1.6em;
+	float: right;
+	display:inline-block;
+}
+
+.outlink{
+	background: url(/images/chalkwork/32x32/PNG/Confirm.png) no-repeat 2px center #fff;;
+	padding: 5px 5px 5px 40px;
+	font-size: 1.6em;
+	float: left;
+	display:inline-block;
+}

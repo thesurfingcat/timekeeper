@@ -1,0 +1,8 @@
+<h2>Average <%=h @average %>
+  <% if @status == 'DOWN' %>
+    <label Class="bad">(Down)</label>
+  <% end %>
+  <% if @status == 'UP' %>
+    <label Class="good">(Up)</label>
+  <% end %>
+</h2>

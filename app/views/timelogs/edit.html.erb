@@ -1,0 +1,25 @@
+
+ 
+<% form_for(@timelog) do |f| %>
+  <%= f.error_messages %>
+    <br />
+    <label class="editpageNarrow">Start Time</label>
+    <%= f.datetime_select(:starttime,
+                  {:order => [ :day, :month, :year ]},
+                  { :class => "dateselect" })%>
+    <br />
+    <label class="editpageNarrow">Lunch</label>
+    <%= f.text_field :lunchbreak %>
+    <br />
+    <label class="editpageNarrow">End Time</label>
+    <%= f.datetime_select(:endtime,
+                  { :include_blank => true, :order => [ :day, :month, :year ]},
+                  { :class => "dateselect" })%>
+    <br />
+    <label class="editpageNarrow">Evening</label>
+    <%= f.text_field :evening %>
+    <br />
+    <p>
+      <%= f.submit "Save", :class => "ucas_update"%>
+    </p>
+ <% end %>

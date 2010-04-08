@@ -1,0 +1,8 @@
+<% form_for(@timelog) do |f| %>
+  <%= f.error_messages %>
+  <% if @inlog == false %>
+    <%= link_to 'Log Out', logout_timelogs_path, :method => :put, :class => "inlink" %>
+  <% else %>
+    <%= link_to 'Log In', login_timelogs_path, :method => :put, :class => "outlink" %>
+  <% end %>
+<% end %>

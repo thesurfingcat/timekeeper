@@ -1,0 +1,29 @@
+<%= render :partial => 'average' %>
+<%= render :partial => 'newlog' %>
+<br />
+<table>
+  <tr>
+    <th>Start</th>
+    <th>Lunch</th>
+    <th>End</th>
+    <th>Evening</th>
+    <th>Total in Minutes</th>
+    <th>Edit</th>
+    <th>Remove</th>
+  </tr>
+ 
+<% for timelog in @timelogs.sort_by(&:starttime).reverse! %>
+<tr>
+   <td><%=h Format_dmyt(timelog.starttime) %></td>
+   <td><%=h timelog.lunchbreak %></td>
+   <td><%=h Format_dmyt(timelog.endtime) %></td>
+   <td><%=h timelog.evening %></td>
+   <td><%=  timelog.total %></td>
+   <td><%= link_to 'Edit', edit_timelog_path(timelog) %></td>
+   <td><%= link_to 'Remove', timelog, :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>
+<% end %>
+ 
+</table>
+
+

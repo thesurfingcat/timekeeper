@@ -1,0 +1,64 @@
+
+
+/* table
+----------------------------------------------- */
+table {
+	width:100%;
+	border: 1px solid #93ccff;
+	margin-bottom:10px;
+}
+
+.tableheader {border-bottom: 1px solid lime;}
+
+tfoot th,
+tfoot td {
+	color: #768088;
+}
+
+.even, tr.even { background: #fff; }
+.odd, tr.odd { background: #d8edff; }
+
+/* adding chalkwork */
+
+td.send a, td.view a, td.add a, td.delete a, td.edit a {
+	border-bottom: none;
+	display: block;
+	position: relative;
+	height: 24px;
+	width: 24px;
+	text-indent: -9999px;
+
+}
+td.send a{
+	background: url(/images/chalkwork/24x24/PNG/Confirm.png) no-repeat center center;
+}
+
+td.view a{
+	background: url(/images/chalkwork/16x16/PNG/Info.png) no-repeat center center;
+	
+}
+td.add a{
+	background: url(/images/chalkwork/16x16/PNG/Add.png) no-repeat center center;
+}
+td.delete a{
+	background: url(/images/chalkwork/16x16/PNG/Delete.png) no-repeat center center;
+}
+td.edit a{
+	background: url(/images/chalkwork/16x16/PNG/Edit.png) no-repeat center center;
+}
+
+
+th{
+	font-weight: bold;
+	color: #163c5d;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+td, th {
+	border-bottom: 1px solid #93ccff;
+	padding:.2em 1em;
+	text-align: left;
+	height:24px;
+}
+

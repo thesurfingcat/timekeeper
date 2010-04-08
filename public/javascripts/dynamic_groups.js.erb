@@ -1,0 +1,28 @@
+// javascripts/dynamic_groups.js.erb
+var groupcode = new Array();
+<% for groupcode in @groupcodes -%>
+  groupcodes.push(new Array('<%=h groupcode.faculty %>', '<%=h groupcode.code %>', '<%=h groupcode.description %>'));
+<% end -%>
+
+function facultySelected() {
+  facuty = document.getElementById("course[faculty]").getValue();
+  options = document.getElementById("course[group]").options;
+  options.length == 1;
+  groupcodes.each(function(groupcode) {
+    if (groupcode[0] == faculty) {
+      options[options.length] = new Option(groupcode[1], groupcode[2]);
+    }
+  });
+  if (options.length == 1) {
+    $('groupcode_field').show();
+  } else {
+    $('groupcode_field').show();
+  }
+}
+
+document.observe('dom:loaded', function() {
+  // facultySelected();
+  // $('course[faculty]').observe('change', facultySelected);
+  $('groupcode_field').hide();
+  $('course[faculty]').observe('change', facultySelected);
+});

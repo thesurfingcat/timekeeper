@@ -1,0 +1,59 @@
+ul.codeslist li {
+	font-size: 1.5em;
+	list-style-type: none;
+	padding: 5px 0;
+	margin:0
+}
+
+/*ul.codeslist a:link, a:visited {
+	color: #2d75b5;
+	text-decoration: none;
+	font-weight: bold;
+	border-bottom: 1px dotted;
+} */
+ul.codeslist a:hover {
+	text-decoration: none;
+	color: #163c5d;
+}
+
+/* Course instance page styling -- blocking out the areas Edited by mearso 2009-05-08 */
+
+
+
+ul.courseinfo li {
+	list-style-type: none;
+	margin: 0;
+	padding: 6px 5px 5px 6px;
+}
+
+/* Definition List styling */
+
+
+dl.courseinfo {
+border: 1px solid #93ccff;
+margin: 2em 0;
+}
+
+
+dl.courseinfo lh h2{
+	padding: .5em;
+	margin: 0;
+}
+
+dl.courseinfo dt {
+width: 11em;
+float: left;
+margin: 0 0 0 0;
+padding:.5em;
+height: 15px;*/
+border-top: 1px solid #93ccff;
+}
+
+dl.courseinfo dd {
+
+margin: 0 0 0 12em;
+padding: .5em;
+height: 15px;
+border-top: 1px solid #93ccff;
+
+}
