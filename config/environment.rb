@@ -12,7 +12,7 @@ Rails::Initializer.run do |config|
   config.load_paths += %W( #{RAILS_ROOT}/lib/letters )
   # end
   
-  config.gem "searchlogic"
+  config.gem "authlogic"
 
 
   config.action_controller.session = {

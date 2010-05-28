@@ -356,3 +356,8 @@ input.search.button {
 	font-weight: bold;
 	color: green;
 }
+
+#user_nav {
+  float: right;
+  font-size: 12px;
+}
