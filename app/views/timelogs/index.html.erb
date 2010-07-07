@@ -6,9 +6,11 @@
     <th>Start</th>
     <th>Lunch</th>
     <th>End</th>
-    <th>Evening</th>
+    <th>Extra</th>
 		<th>Notes</th>
     <th>Total in Minutes</th>
+		<th>TOIL</th>
+		<th>Non-working</th>
     <th>Edit</th>
     <th>Remove</th>
   </tr>
@@ -18,9 +20,11 @@
   	<td><%=h Format_dmyt(timelog.starttime) %></td>
    	<td><%=h timelog.lunchbreak %></td>
    	<td><%=h Format_dmyt(timelog.endtime) %></td>
-   	<td><%=h timelog.evening %></td>
+   	<td><%=h timelog.extra %></td>
 	 	<td><%=h timelog.notes %></td>	
    	<td><%=  timelog.total %></td>
+		<td><%=  timelog.toil %></td>
+		<td><%=  timelog.non_working %></td>
    	<td><%= link_to 'Edit', edit_timelog_path(timelog) %></td>
    	<td><%= link_to 'Remove', timelog, :confirm => 'Are you sure?', :method => :delete %></td>
 	</tr>

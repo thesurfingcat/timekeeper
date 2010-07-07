@@ -501,3 +501,11 @@ padding:15px
 	float: left;
 	display:inline-block;
 }
+
+.loglink{
+	background: url(/images/chalkwork/24x24/PNG/Clock.png) no-repeat 2px center #fff;;
+	padding: 5px 5px 5px 30px;
+	font-size: 1.6em;
+	float: right;
+	display:inline-block;
+}

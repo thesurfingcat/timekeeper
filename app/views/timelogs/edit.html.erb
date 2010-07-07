@@ -16,12 +16,18 @@
                   { :include_blank => true, :order => [ :day, :month, :year ]},
                   { :class => "dateselect" })%>
     <br />
-    <label class="editpageNarrow">Evening</label>
-    <%= f.text_field :evening %>
+    <label class="editpageNarrow">Extra (in minutes)</label>
+    <%= f.text_field :extra %>
 		<br />
 		<label class="editpageNarrow">Notes</label>
-    <%= f.text_field :notes %>
+    <%= f.text_area :notes %>
     <br />
+		<label class="editpageNarrow">Toil</label>
+		<%= f.select(:toil, ['No', 'Yes'],{:default => 'No'}) %>
+		<br />
+		<label class="editpageNarrow">Non-working day</label>
+		<%= f.select(:non_working, ['No', 'Yes'],{:default => 'No'}) %>
+		<br />
     <p>
       <%= f.submit "Save", :class => "ucas_update"%>
     </p>

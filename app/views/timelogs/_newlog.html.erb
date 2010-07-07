@@ -4,5 +4,7 @@
     <%= link_to 'Log Out', logout_timelogs_path, :method => :put, :class => "inlink" %>
   <% else %>
     <%= link_to 'Log In', login_timelogs_path, :method => :put, :class => "outlink" %>
+		<%= link_to 'Log TOIL', logtoil_timelogs_path, :method => :put, :class => "loglink" %>
+		<%= link_to 'Log Non-working time', lognonwork_timelogs_path, :method => :put, :class => "loglink" %>
   <% end %>
 <% end %>
