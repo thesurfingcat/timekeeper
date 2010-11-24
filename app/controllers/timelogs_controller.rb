@@ -29,7 +29,7 @@ class TimelogsController < ApplicationController
         if log.toil == 'Yes'
           toiltime+=log.extra
         end
-        if log.lunchbreak == nil or log.lunchbreak == 0
+        if log.lunchbreak == nil or log.lunchbreak == 0 or log.total == nil
         else
           tottime+=log.total
           count+=1
@@ -92,12 +92,6 @@ class TimelogsController < ApplicationController
     @timelog = Timelog.find(params[:id])
  
     respond_to do |format|
-      if @timelog.lunchbreak == nil
-        @timelog.update_attributes!(:lunchbreak => 30)
-      end
-      if @timelog.extra == nil
-        @timelog.update_attributes!(:extra => 0)
-      end
       if @timelog.update_attributes(params[:timelog])
         flash[:notice] = 'Time log updated successfully.'
         @timelog = Timelog.find(params[:id])
@@ -133,7 +127,7 @@ class TimelogsController < ApplicationController
     @timelog = Timelog.new
     respond_to do |format|
       if @timelog.save
-        @timelog.update_attributes!(:starttime => Time.now, :endtime => Time.now, :extra => 555, :lunchbreak => 0, :non_working => 'No', :toil => 'Yes')
+        @timelog.update_attributes!(:starttime => Time.now, :endtime => Time.now, :extra => 555, :lunchbreak => 0, :non_working => 'No', :toil => 'Yes', :notes => 'TOIL')
         flash[:notice] = 'TOIL recorded successfully.'
         format.html { redirect_to(timelogs_path) }
         format.xml { head :ok }
@@ -149,7 +143,7 @@ class TimelogsController < ApplicationController
     @timelog = Timelog.new
     respond_to do |format|
       if @timelog.save
-        @timelog.update_attributes!(:starttime => Time.now)
+        @timelog.update_attributes!(:starttime => Time.now, :extra => 0, :lunchbreak => 30, :non_working => 'No', :toil => 'No')
         flash[:notice] = 'Logged In successfully.'
         format.html { redirect_to(timelogs_path) }
         format.xml { head :ok }

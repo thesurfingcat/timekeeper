@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100706200549) do
+ActiveRecord::Schema.define(:version => 20100821190302) do
 
   create_table "timelogs", :force => true do |t|
     t.datetime "starttime"
@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(:version => 20100706200549) do
     t.datetime "updated_at"
     t.integer  "total"
     t.string   "notes"
-    t.string   "toil"
-    t.string   "non_working"
+    t.string   "toil",        :default => "No"
+    t.string   "non_working", :default => "No"
   end
 
 end
