@@ -1,0 +1,31 @@
+= render :partial => 'average'
+= render :partial => 'newlog'
+%br
+%table
+	%tr
+		%th Start
+		%th End
+		%th Lunch
+		%th Extra
+		%th Notes
+		%th TOIL
+		%th Non-working
+		%th Total
+		%th
+		%th
+		- for timelog in @timelogs.sort_by(&:starttime).reverse!
+			%tr
+				%td= h Format_dmyt(timelog.starttime)
+				%td= h Format_dmyt(timelog.endtime)
+				%td= h timelog.lunchbreak
+				%td= h timelog.extra
+				%td= h timelog.notes
+				%td= timelog.toil
+				%td= timelog.non_working
+				%td= timelog.total
+				%td= link_to 'Edit', edit_timelog_path(timelog), :class => "simple_button"
+				%td= link_to 'Delete', timelog, method: :delete, :class => "simple_button"
+
+
+
+

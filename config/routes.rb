@@ -1,8 +1,10 @@
-ActionController::Routing::Routes.draw do |map|
-  map.resources :timelogs, :collection => { :logout => :put, :login => :put, :lognonwork => :put, :logtoil => :put }    
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
-  map.logout '/logout', :controller => 'sessions', :action => 'destroy'
-  map.login '/login', :controller => 'sessions', :action => 'new'
-  map.root :controller=>'sessions' , :action =>'new'
+Timekeeper::Application.routes.draw do
+  
+  resources :timelogs, :collection => { :logout => :put, :login => :put, :lognonwork => :put, :logtoil => :put }
+  match "/login" => "timelogs#login", via: [:get, :post]
+  match "/logout" => "timelogs#logout", via: [:get, :post]
+  match "/logtoil" => "timelogs#logtoil", via: [:get, :post]
+  match "/lognonwork" => "timelogs#lognonwork", via: [:get, :post]
+  root :to => 'timelogs#index'
+
 end

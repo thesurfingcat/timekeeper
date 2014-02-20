@@ -1,0 +1,11 @@
+%h2 
+	Average #{h @average}
+	- if @status == 'DOWN'
+		%label.bad 
+			[#{@timeup} minutes down]
+	- if @status == 'UP'
+		%label.good
+			[#{@timeup} minutes up]
+	- if @status == 'on target'
+		%label.good
+			[Exactly even]

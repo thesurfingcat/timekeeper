@@ -1,27 +1,19 @@
-# This file is auto-generated from the current state of the database. Instead of editing this file, 
-# please use the migrations feature of Active Record to incrementally modify your database, and
-# then regenerate this schema definition.
+# encoding: UTF-8
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of Active Record to
+# incrementally modify your database, and then regenerate this schema definition.
 #
-# Note that this schema.rb definition is the authoritative source for your database schema. If you need
-# to create the application database on another system, you should be using db:schema:load, not running
-# all the migrations from scratch. The latter is a flawed and unsustainable approach (the more migrations
+# Note that this schema.rb definition is the authoritative source for your
+# database schema. If you need to create the application database on another
+# system, you should be using db:schema:load, not running all the migrations
+# from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
-# It's strongly recommended to check this file into your version control system.
+# It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100821190302) do
+ActiveRecord::Schema.define(version: 20100821190302) do
 
-  create_table "timelogs", :force => true do |t|
-    t.datetime "starttime"
-    t.datetime "endtime"
-    t.integer  "lunchbreak"
-    t.integer  "extra"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "total"
-    t.string   "notes"
-    t.string   "toil",        :default => "No"
-    t.string   "non_working", :default => "No"
-  end
+# Could not dump table "timelogs" because of following NoMethodError
+#   undefined method `column_spec_with_oracle_enhanced' for #<ActiveRecord::ConnectionAdapters::Mysql2Adapter:0x007f9c3a6b57f0>
 
 end

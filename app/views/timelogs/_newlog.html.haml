@@ -1,0 +1,7 @@
+= form_for(@timelog) do |f|
+	- if @inlog == false
+		= link_to('Log Out', '/logout', :class => "simple_button")
+	- else
+		= link_to('Log In', '/login', :class => "simple_button")
+		= link_to('Log TOIL', '/logtoil', :class => "simple_button")
+		= link_to('Log Non-work time', 'lognonwork', :class => "simple_button")

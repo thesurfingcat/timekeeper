@@ -1,0 +1,31 @@
+= form_for(@timelog) do |f|
+	= submit_tag "Save", :class => 'simple_button'
+	%br
+	%label.editpage
+		Start Time
+	= f.datetime_select :starttime, {:order => [ :day, :month, :year ]}, { :class => "dateselect" }
+	%br
+	%label.editpage
+		End Time
+	= f.datetime_select :endtime, {:order => [ :day, :month, :year ]}, { :class => "dateselect" }
+	%br	
+	%label.editpage
+		Lunch
+	= f.text_field :lunchbreak
+	%br
+	%label.editpage
+		Extra (in mins)
+	= f.text_field :extra
+	%br
+	%label.editpage
+		Toil
+	= f.select(:toil, ['No', 'Yes'],{:default => 'No'})
+	%br
+	%label.editpage
+		Non-working
+	= f.select(:non_working, ['No', 'Yes'],{:default => 'No'})
+	%br
+	%label.editpage
+		Notes
+	= f.text_area(:notes, :rows => 5, :cols => 50 )
+	

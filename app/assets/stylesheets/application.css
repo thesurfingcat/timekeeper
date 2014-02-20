@@ -1,0 +1,3270 @@
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_12 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	display:inline;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .grid_1 {
+	width:60px;
+}
+
+.container_12 .grid_2 {
+	width:140px;
+}
+
+.container_12 .grid_3 {
+	width:220px;
+}
+
+.container_12 .grid_4 {
+	width:300px;
+}
+
+.container_12 .grid_5 {
+	width:380px;
+}
+
+.container_12 .grid_6 {
+	width:460px;
+}
+
+.container_12 .grid_7 {
+	width:540px;
+}
+
+.container_12 .grid_8 {
+	width:620px;
+}
+
+.container_12 .grid_9 {
+	width:700px;
+}
+
+.container_12 .grid_10 {
+	width:780px;
+}
+
+.container_12 .grid_11 {
+	width:860px;
+}
+
+.container_12 .grid_12 {
+	width:940px;
+}
+
+
+
+/* Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .prefix_1 {
+	padding-left:80px;
+}
+
+.container_12 .prefix_2 {
+	padding-left:160px;
+}
+
+.container_12 .prefix_3 {
+	padding-left:240px;
+}
+
+.container_12 .prefix_4 {
+	padding-left:320px;
+}
+
+.container_12 .prefix_5 {
+	padding-left:400px;
+}
+
+.container_12 .prefix_6 {
+	padding-left:480px;
+}
+
+.container_12 .prefix_7 {
+	padding-left:560px;
+}
+
+.container_12 .prefix_8 {
+	padding-left:640px;
+}
+
+.container_12 .prefix_9 {
+	padding-left:720px;
+}
+
+.container_12 .prefix_10 {
+	padding-left:800px;
+}
+
+.container_12 .prefix_11 {
+	padding-left:880px;
+}
+
+
+
+/* Suffix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .suffix_1 {
+	padding-right:80px;
+}
+
+.container_12 .suffix_2 {
+	padding-right:160px;
+}
+
+.container_12 .suffix_3 {
+	padding-right:240px;
+}
+
+.container_12 .suffix_4 {
+	padding-right:320px;
+}
+
+.container_12 .suffix_5 {
+	padding-right:400px;
+}
+
+.container_12 .suffix_6 {
+	padding-right:480px;
+}
+
+.container_12 .suffix_7 {
+	padding-right:560px;
+}
+
+.container_12 .suffix_8 {
+	padding-right:640px;
+}
+
+.container_12 .suffix_9 {
+	padding-right:720px;
+}
+
+.container_12 .suffix_10 {
+	padding-right:800px;
+}
+
+.container_12 .suffix_11 {
+	padding-right:880px;
+}
+
+
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+/* Used for Paging*/ 
+
+.date_selector
+{
+  float:left;
+  margin-right: 5px;
+}
+
+a.page, span.page {
+  padding: 4px 6px;
+}
+
+a.page {
+  margin: 0 3px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #0063dc;
+}
+
+a.page:hover {
+  border: 1px solid #0063dc;
+  background-color: #242424;
+  color: #fff;
+}
+
+span.disabled_page {
+  color: #b1aab1;
+} 
+
+
+span.current_page {
+  color: #ff0084;
+}
+
+.dateselect{
+	display:inline-block;
+}
+
+.timeselect{
+	display:inline-block;
+}
+
+.blockbox{
+	float:left;
+}
+
+.endblockbox{
+	clear:left;
+}
+
+/*Styling the course info table (courseinstance helper) Tim Harris 11th June 2009*/
+.course_info{
+	width:100%;
+	margin-bottom:0px;
+}
+
+/*Styling a course title */
+
+.coursetitle {color: #ccc;}
+
+/* Styling a courseinstance form Edited by mearso 2009-05-08 */
+
+  textarea {
+    width: auto;
+    width:600px\8;
+    overflow:auto;
+    margin-bottom: 10px;
+  }
+
+.editpage {display:block;
+ font-weight:bold;
+ clear:left;
+ float:left;
+ width:15em;
+ padding-right:1em;
+ text-align:right;
+ }
+ 
+ 
+ textarea.editpage {
+    width: 300px\8;
+  }
+
+.editpageWide {display:block;
+   font-weight:bold;
+   clear:left;
+   float:left;
+   width:15em;
+   padding-right:1em;
+   text-align:right;
+}
+
+.editpageRight {display:inline;
+   font-weight:bold;
+   clear:left;
+   float:left;
+   width:15em;
+   padding-right:1em;
+   text-align:right;
+}
+
+label.editpageWide {
+  font-weight:bold;
+  float:left;
+  width: 20em;
+  text-align: right;
+  margin-right: 1em;
+}
+
+ textarea.editpageWide {
+   width: 300px\8;
+ }
+
+.editpageNarrow {display:block;
+ font-weight:bold;
+ clear:left;
+ float:left;
+ width:8em;
+ padding-right:1em;
+ text-align:right;
+ }
+ 
+ textarea.editpageNarrow {
+    width: 300px\8;
+  }
+
+.searchpage {display:block;
+ font-weight:bold;
+ clear:left;
+ float:left;
+ width:10em;
+ padding-right:1em;
+ text-align:right;
+ }
+
+.mid-bar {
+	font-family:Arial;
+ 	font-weight:bold;
+ 	font-size:1.5em;
+ 	background-color: #282828;
+ 	border-right: none;
+ 	border-bottom: 2px solid #2D75B5;
+ 	color: #fff;
+ }
+ 
+.bold-bar {
+  padding: 4px 8px 4px 12px;
+ 	font-family:Arial;
+ 	font-weight:bold;
+ 	font-size:1.5em;
+ 	background-color: #282828;
+ 	border: 1px solid #181818;
+ 	border-bottom: 2px solid #2D75B5;
+ 	color: #fff;
+ }
+
+.abbreviation {display:inline-block;
+ font-weight:bold;
+ float:left;
+ clear:left;
+ width:15em;
+ padding-right:1em;
+ text-align:right;
+ }
+
+
+select, button, input {
+  display: block; 
+  margin-bottom: 10px;}
+  
+button:hover{
+  color:red;
+}
+
+#new_courseinstance label{display:block;
+ font-weight:bold;
+ float:left;
+ clear:left;
+ width:15em;
+ padding-right:1em;
+ text-align:right;
+ }
+
+
+#new_courseinstance .submit{width: 10em;display: block;margin-left:16em;
+}
+
+br{clear:both;}
+
+
+/* Login Page  Edited by mearso 2009-05-11*/
+
+
+body#login {
+	background: #0b1010 url(/images/admit-bg.jpg) repeat-x 0 top;
+}
+
+
+.loginbox {
+  font-size:1em;
+  text-align: center;
+  border: 1px solid #b9c9d6;
+  margin-top: 4em;
+  background: #2C2C2C;
+}
+
+.loginbox a{border-bottom:none;}
+
+p.loginimage a {
+		text-indent: -5000px;
+}
+
+/* Using image as login button */
+
+
+a.loginlink {
+	text-decoration: none;
+	display: block;
+	height: 100px;
+	background:  url(/images/login.jpg) no-repeat center 5px;
+}
+
+
+a.loginlink:hover {
+	background:  url(/images/login.jpg) no-repeat center -100px;
+}
+
+/* Pushing h1 out to the left and using an image instead */
+
+.loginbox h1 {
+	text-indent: -3000px;
+	background: url(/images/Admitlogo.jpg) no-repeat center center;
+	line-height: 110px;
+}
+
+
+body {
+  margin: 0;
+  background-color: #242424;
+/*margin:0; background: #488cbd url(/images/admit-bg.jpg) repeat-x 0 top;*/
+/*  margin:0; background: black url(/images/admit-bg.jpg) repeat-x 0 top;*/
+}
+
+/* Styling form error box */
+
+#errorExplanation {
+	background-color: #242424;
+	border: 1px solid #181818;
+	padding-left: 1em;
+	padding-top: 0;
+	margin: 1em 1em;
+}
+
+#errorExplanation li{
+
+	margin:.3em 0;
+}
+
+#errorExplanation h2{
+	margin-top: 1ex;
+	color: #A60000;
+}
+
+#errorExplanation p{
+	color: #C2C2C2;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.5em;
+	margin-bottom: .5em;
+}
+
+#errorExplanation ul{
+	color: seashell;
+	font-size: 1.2em;
+}
+
+/* Default link styling for links with a graphic*/
+.link{
+  background: url(/images/chalkwork/16x16/PNG/Refresh.png) no-repeat 2px center transparent;
+  color: #fff;
+  padding: 5px 5px 5px 24px;
+	font-weight: bold;
+	font-size: 1.6em;
+	border: none;
+}
+.link:hover{
+  color: darkred;
+}
+
+/* Adding a graphic to placs where users can add things */
+
+.addlink{
+	background: url(/images/chalkwork/16x16/PNG/Add.png) no-repeat 2px center transparent;
+}
+
+.backlink{
+	background: url(/images/chalkwork/16x16/PNG/arrow-left.png) no-repeat 2px center transparent;
+}
+
+.showlink, .hidelink{
+	background: url(/images/chalkwork/16x16/PNG/magnifier.png) no-repeat 2px center transparent;
+} 
+
+.viewlink{
+	background: url("/images/chalkwork/16x16/PNG/user.png") no-repeat 2px center transparent; 
+	margin-left: 10px; 
+}   
+
+.right{float: right;}
+
+.show_record{
+	background: url("/images/chalkwork/16x16/PNG/Arrow (Down).png") no-repeat 2px center transparent; 
+	padding: 10px; 
+}
+   
+.hide_record{
+	background: url("/images/chalkwork/16x16/PNG/Arrow (Up).png") no-repeat 2px center transparent; 
+	padding: 10px; 
+} 
+
+.ucas_update{
+  background: url(/images/chalkwork/16x16/PNG/Refresh.png) no-repeat 2px center transparent;
+}
+
+.closelink{
+	background: url(/images/chalkwork/16x16/PNG/Close.png) no-repeat 2px center transparent;
+}  
+     
+.close_match{      
+	float: right;
+ 	background: url(/images/chalkwork/16x16/PNG/Close.png)  no-repeat 2px center transparent; 
+	margin-bottom: 5px;
+}
+
+.close_message{      
+	padding: 8px 16px 8px 8px;      
+	float: right;
+ 	background: url(/images/chalkwork/16x16/PNG/Close.png)  no-repeat 2px center transparent; 
+}
+
+.processed{      
+	float: right;
+ 	background: url("/images/chalkwork/16x16/PNG/Security (Locked).png")  no-repeat 2px center transparent;  
+	margin-bottom: 5px;
+}  
+         
+
+.accept_link{  
+	margin-left:10px;
+	float: right;  
+  background: url(/images/chalkwork/16x16/PNG/Confirm.png)  no-repeat 2px center transparent;;  
+	margin-bottom: 5px;  
+}  
+
+.minimiselink{
+	background: #2C2C2C;;
+	padding: 5px 5px 5px 5px;
+}
+
+.decisionlink{
+  background: url(/images/chalkwork/16x16/PNG/Refresh.png)  no-repeat 2px center transparent;
+	font-size: 1.1em;
+	margin-left: 6px;
+}
+
+.printlink{
+  background: url(/images/chalkwork/16x16/PNG/Print.png)  no-repeat 2px center transparent;
+	margin-left: 6px;
+}
+
+.sendlink{
+  background: url(/images/chalkwork/24x24/PNG/Confirm.png)  no-repeat 2px center transparent;
+}  
+
+.searchbutton{
+  background: url(/images/chalkwork/16x16/PNG/Search.png)  no-repeat 2px center transparent;   
+	align: right;
+	margin-left: 120px;
+}    
+
+.returnlink{
+	float:right;
+	font-size: 1.1em;
+	background: url(/images/chalkwork/16x16/PNG/Search.png) no-repeat 2px center transparent;     
+	padding: 8px 5px 0px 24px; 
+}
+
+.clearinglink{ 
+	float:right;
+	background: url(/images/chalkwork/16x16/PNG/Search.png) no-repeat 2px center transparent;  
+	padding: 0px 5px 0px 24px;  
+}
+
+.exportlink{
+	float:right;
+	font-size: 0.7em;
+	background: url(/images/chalkwork/32x32/PNG/Save.png) no-repeat 2px center transparent;     
+	padding: 5px 5px 5px 40px;
+	margin-bottom: 10px;
+}
+
+.importbox{
+	float:right;
+	font-weight: normal;
+	background: none;     
+	padding: 5px 5px 5px 30px; 
+	margin-bottom: 10px;
+}
+
+.useimportlink{
+  background: url(/images/chalkwork/24x24/PNG/Confirm.png)  no-repeat 2px center transparent;
+	padding: 5px 5px 5px 30px; 
+}
+
+.importlink{
+  background: url(/images/chalkwork/24x24/PNG/Confirm.png)  no-repeat 2px center transparent;
+}    
+
+.selectlink{
+	float:right;
+	padding: 0 3px 3px 9px;
+}
+
+.themelink{
+  float:right;
+  color: #242424;
+	background: center transparent;
+	padding: 8px;
+}
+
+.headingbar{
+  font-family:Arial;
+	font-weight:bold;
+	font-size:1.8em;
+	color: darkred;
+	padding: 12px 8px 8px 1px;
+	border: none;
+	float: left;
+}
+
+.fathead{
+  font-family:Arial;
+	font-weight:bold;
+	font-size:1.6em;
+	padding: 4px 8px;
+	color: darkred;
+}
+
+#conditions select {
+ display: inline;
+}
+
+#conditions button {
+ display: inline;
+}
+
+#conditions input {
+ display: inline;
+}     
+
+#freetext{
+	background: #fff;
+	color: #181818;
+	padding: 5px;
+	border: 0.1em solid;
+	border-color: #9c9c9c;
+	width: 50em;
+} 
+ element.style {
+background-color:#2C2C2C;
+color:#990000;
+}  
+
+/* Sub Menu for UCAS and Direct Apps*/
+.droplinebar ul{
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+  font: 12px Arial;
+  backround-color: #163c5d;
+  border-left: 1px solid #181818;
+}
+
+.droplinebar ul li{
+  backround-color: #163c5d;   
+  display:block;
+  float:left;
+  border-right: 1px solid #181818;
+  border-bottom: 1px solid #181818;
+  border-top: 1px solid #181818;
+  margin:0;
+  padding:0 3px 0 0;
+}
+
+.droplinebar ul li a{
+float: left;
+color: seashell;
+padding: 9px 11px;
+text-decoration: none;
+}
+
+.droplinebar ul li a:hover, .droplinebar ul li .current{ 
+color: darkred;
+/*background:transparent url("../images/Nav_opacity.png") repeat-x scroll 0 ;*/
+backround-color: #fff;
+}                     
+
+
+/* SINGLE PROGRESS BAR */
+
+.loadingBar{
+	padding: 5px 5px 5px 30px;
+	font-size: 1.6em;
+	border: 1px solid #242424;
+	margin-left: 15px;
+	background:url(/images/ajax-loader.gif) no-repeat 0 0;
+}
+.loadingBar span{
+	padding: 5px 5px 5px 30px;
+	font-size: 1.6em;
+	border: 1px solid #242424;
+	margin-left: 15px;
+	background:url(/images/bar.gif) no-repeat 0 0;*/
+}
+.loadingBar em{
+	padding: 5px 5px 5px 30px;
+	font-size: 1.6em;
+	border: 1px solid #242424;
+	margin-left: 15px;
+	background:url(/images/bg_cover.gif) repeat-x 0 0;
+}
+
+.progressBar{
+	width:216px;
+	height:41px;
+	background:url(/images/bg_bar.gif) no-repeat 0 0;
+	position:relative;
+}
+.progressBar span{
+	position:absolute;
+	display:block;
+	width:200px;
+	height:25px;
+	background:url(/images/bar.gif) no-repeat 0 0;*/
+	top:8px;
+	left:8px;
+	overflow:hidden;
+	text-indent:-8000px;
+}
+.progressBar em{
+	position:bottom;
+	display:block;
+	width:200px;
+	height:25px;
+	background:url(/images/bg_cover.gif) repeat-x 0 0;
+	top:0;
+	width: 100%;
+}
+
+.progress {
+  display: block;
+	padding: 0px 0px 0px 0px;
+	font-size: 1.1em;
+	text-decoration:none;
+	float: left;
+	clear: left;
+  margin-right:0.5em;
+  margin-left:0.5em;
+  margin-top:1.1em;
+}
+
+/* Added this for use when sorting columns in a list. See application_helper */
+#progress {
+  /* hide by default, will be overirdden with the style attribute when it is showed */
+  display: none;
+  text-align: center;
+  margin: 10px;
+  width: 50px;
+}
+
+#progress.form {
+  margin-left: 175px;
+}
+
+/* Styling Flash[:notice] Box */
+
+#flashBox {
+	font-size: 1.1em;
+	margin-top: 1em;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+#flashBox.flashNotice {
+  background-color: #242424;
+	border: 1px solid #181818;
+}
+
+#flashBox.flashWarning {
+  background-color: #ff5726;
+	border: 2px solid #ff3c00;
+	color: white;
+	font-weight: bold;
+}
+
+/* Pagination */
+.pagination {
+  margin:3px;
+  padding:4px; 
+}
+.pagination a {
+  border:1px solid #242424;
+  margin:2px;
+  padding:4px 6px;
+  text-decoration:none; 
+}
+.pagination a:hover, .pagination a:active {
+  background-color:#242424;
+  border:1px solid #383838;
+  color:#FFFFFF; 
+}
+.pagination span.current {
+  background-color: gray;
+  border:1px solid #383838;
+  color:#ededed;
+  font-weight:bold;
+  margin:2px;
+  padding:4px 6px;
+}
+.pagination span.disabled {
+  background-color: gray;  
+  border:1px solid #383838;
+  color:#ededed;
+  margin:2px;
+  padding:4px 6px;
+}   
+
+.userdetails {
+  float: right;	
+  padding: 4px;
+  background-color: #242424;
+  margin-top: 10px;  
+}   
+
+.whitebox {
+  color: black;
+  font-size: 1.1em;
+  background-color: seashell;  
+  border:1px solid black; 
+  padding:15px
+}
+
+.conditionsbox {
+  color: seashell;
+  font-size: 1.1em;
+  background-color: #242424;  
+  border:1px solid #181818; 
+  padding:15px
+}
+
+.warning, 
+.alert {
+	color: red;
+	font-size: 1.2em;
+	float: left;	
+	padding: 10px;
+	background-color: #242424;  
+	/*-webkit-border-radius: 8px;*/    
+	/*-moz-border-radius: 8px;*/      
+	border: 0.5px solid #2D75B5;
+	span:100%;
+	margin-top: 10px;
+}
+ 
+.alert{
+	font-size: 0.9em;
+	float: right;	
+	padding: 0px;     
+	background: none; 
+	border: none;
+}
+
+.columnform {
+  display: block;
+}
+
+.columnform label,
+.columnform input,
+.columnform .submit {
+  float: left;
+}
+
+.columnform label {
+  font-weight: bold;
+  margin: 0px 5px 5px 0px;
+}
+
+.columnform input {
+  width: 100px;
+  margin: 0px 5px 5px 0px;
+}
+
+.columnform .submit,
+.columnform a {
+  cursor: pointer;
+}
+
+.columnform .submit {
+  background: url("/images/chalkwork/16x16/PNG/Add.png") no-repeat scroll center center transparent;
+  width: 16px;
+  height: 16px;
+  border: none;
+}
+
+/* IFrames */
+.iframe {
+  width: 100%;  
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+	min-height: 500px;
+}    
+
+/* CONTACT ICONS */
+.contact_li {margin-left: 0px;padding: 0 0 3px 20px;height:20px; }   
+.telephone {background: url('/images/chalkwork/16x16/PNG/Phone.png') no-repeat scroll 0 0 transparent}
+.mobilephone {background: url('/images/chalkwork/16x16/PNG/iPod.png') no-repeat scroll 0 0 transparent}  
+.email {background: url('/images/chalkwork/16x16/PNG/Mail.png') no-repeat scroll 0 0 transparent}  
+}
+
+/* Used for total tariff points styling in clearing quals */
+.tariff_total{
+  background-color:#163C5D;
+  color:#fff;
+  border:solid 1px #163C5D;
+	padding:4px;
+	width:auto;
+}
+
+.choicecancelled{
+  color: #A60000;
+	font-size: 1.2em;
+	font-weight: bold;	
+	padding: 4px;
+	background-color: #242424;      
+	border: 1px solid #181818;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+.red_notice{
+  color: #A60000;
+  font-weight: bold;
+}
+
+.grey_notice{
+  color: gray;
+  font-weight: bold;
+}
+
+.greyed_out{
+  color: gray;
+}
+
+.bold_notice{
+  color: seashell;
+  font-weight: bold;
+}
+
+.clearingstats{
+	font-size: 1em;	      
+}
+
+.clearingstattotal{
+  text-align: center;
+}
+
+.clearingstatsbold{
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.dash_heading{
+  background-color: #242424;
+  border: 1px solid #181818;
+  border-bottom: 2px solid #181818;
+  margin: 0;
+  padding-top: 8px;
+  padding-left: 8px;
+}     
+
+.tooltip_body
+{
+width:300px;	
+background-color:#2C2C2C;
+padding: 5px;
+margin-left: 20px;
+border-left: 1px solid #000;
+border-bottom: 1px solid #000;
+border-right: 1px solid #000;
+z-index:99;
+white-space: pre-wrap; /* css-3 */
+white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.tooltip_head
+{
+width:300px;	
+background-color:#414141;
+color:#FFF;
+padding: 5px;
+font-weight: bold;
+margin-left: 20px;
+border-left: 1px solid #000;
+border-right: 1px solid #000;	
+}
+
+.processMessage{
+  color: seashell;
+	font-size: 1.2em;	
+	padding: 8px;
+	background-color: #242424;      
+	border: 1px solid #181818;
+	margin-top: 10px;
+} 
+
+/* DBS SCREENS */
+.stageheader {
+  font-family:Arial;
+ 	font-weight:bold;
+ 	font-size:1.5em;
+ 	background-color: #282828;
+ 	border: 1px solid #181818;
+ 	border-bottom: 2px solid #2D75B5;
+ 	color: #fff;
+}
+
+.heading {
+    background-color: #242424;
+    border: 1px solid #181818;
+    color: seashell;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+
+.heading .header {
+    color: seashell;
+    line-height: 1.2em;
+    margin-bottom: 0.3em;
+		font-size: 1.5em;
+}
+.label
+{
+    display:inline;
+    float:left;
+    margin: 0 4px 0 0;
+    vertical-align:top;
+		padding: 0px;
+		margin: 0px;
+}
+
+.inline{
+	display:inline-block;
+}
+
+.dbsbox{
+	border:solid 1px #181818; 
+	padding:1em; 
+	margin-bottom:10px;
+	min-height:194px;	
+	position:relative;
+}
+
+.dbscompletelink {
+	position:absolute;   
+	bottom:1px;        
+	right:10px;
+}
+
+.dbsreject_link{
+	position:absolute;   
+	bottom:1px;        
+	right:10px;  
+}
+
+.dbsadd_link{
+	position:absolute;   
+	bottom:1px;        
+	right:10px;  
+}
+
+body { background-color: #242424; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #ededed;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: gray;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+.black {
+border: black dashed 2px; 
+width: 10px; 
+padding: 10px;	
+}
+.active{
+	background-color: #ededed;
+border: black solid 2px; 
+width: 10px; 
+padding: 10px;
+}
+
+.floatright {
+border-left:1px solid gray;
+float:right;
+max-width:36em;
+padding:1em;
+}
+
+#fancyFlash {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #ededed;
+}
+
+#fancyFlash p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+/*
+	960 Grid System ~ Core CSS.
+	Learn more ~ http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/* =Containers
+--------------------------------------------------------------------------------*/
+
+.container_12,
+.container_16
+{
+	width: 92%;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16
+{
+	display: inline;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.container_12 .grid_3,
+.container_16 .grid_4
+{
+	width: 23%;
+}
+
+.container_12 .grid_6,
+.container_16 .grid_8
+{
+	width: 48%;
+}
+
+.container_12 .grid_9,
+.container_16 .grid_12
+{
+	width: 73%;
+}
+
+.container_12 .grid_12,
+.container_16 .grid_16
+{
+	width: 98%;
+}
+
+/* =Grid >> Children (Alpha ~ First, Omega ~ Last)
+--------------------------------------------------------------------------------*/
+
+.alpha
+{
+	margin-left: 0;
+}
+
+.omega
+{
+	margin-right: 0;
+}
+
+/* =Grid >> 12 Columns
+--------------------------------------------------------------------------------*/
+
+.container_12 .grid_1
+{
+	width: 6.333%;
+}
+
+.container_12 .grid_2
+{
+	width: 14.666%;
+}
+
+.container_12 .grid_4
+{
+	width: 31.333%;
+}
+
+.container_12 .grid_5
+{
+	width: 39.666%;
+}
+
+.container_12 .grid_7
+{
+	width: 56.333%;
+}
+
+.container_12 .grid_8
+{
+	width: 64.666%;
+}
+
+.container_12 .grid_10
+{
+	width: 81.333%;
+}
+
+.container_12 .grid_11
+{
+	width: 89.666%;
+}
+
+/* =Grid >> 16 Columns
+--------------------------------------------------------------------------------*/
+
+.container_16 .grid_1
+{
+	width: 4.25%;
+}
+
+.container_16 .grid_2
+{
+	width: 10.5%;
+}
+
+.container_16 .grid_3
+{
+	width: 16.75%;
+}
+
+.container_16 .grid_5
+{
+	width: 29.25%;
+}
+
+.container_16 .grid_6
+{
+	width: 35.5%;
+}
+
+.container_16 .grid_7
+{
+	width: 41.75%;
+}
+
+.container_16 .grid_9
+{
+	width: 54.25%;
+}
+
+.container_16 .grid_10
+{
+	width: 60.5%;
+}
+
+.container_16 .grid_11
+{
+	width: 66.75%;
+}
+
+.container_16 .grid_13
+{
+	width: 79.25%;
+}
+
+.container_16 .grid_14
+{
+	width: 85.5%;
+}
+
+.container_16 .grid_15
+{
+	width: 91.75%;
+}
+
+/* =Prefix Extra Space >> Global
+--------------------------------------------------------------------------------*/
+
+.container_12 .prefix_3,
+.container_16 .prefix_4
+{
+	padding-left: 25%;
+}
+
+.container_12 .prefix_6,
+.container_16 .prefix_8
+{
+	padding-left: 50%;
+}
+
+.container_12 .prefix_9,
+.container_16 .prefix_12
+{
+	padding-left: 75%;
+}
+
+/* =Prefix Extra Space >> 12 Columns
+--------------------------------------------------------------------------------*/
+
+.container_12 .prefix_1
+{
+	padding-left: 8.333%;
+}
+
+.container_12 .prefix_2
+{
+	padding-left: 16.666%;
+}
+
+.container_12 .prefix_4
+{
+	padding-left: 33.333%;
+}
+
+.container_12 .prefix_5
+{
+	padding-left: 41.666%;
+}
+
+.container_12 .prefix_7
+{
+	padding-left: 58.333%;
+}
+
+.container_12 .prefix_8
+{
+	padding-left: 66.666%;
+}
+
+.container_12 .prefix_10
+{
+	padding-left: 83.333%;
+}
+
+.container_12 .prefix_11
+{
+	padding-left: 91.666%;
+}
+
+/* =Prefix Extra Space >> 16 Columns
+--------------------------------------------------------------------------------*/
+
+.container_16 .prefix_1
+{
+	padding-left: 6.25%;
+}
+
+.container_16 .prefix_2
+{
+	padding-left: 12.5%;
+}
+
+.container_16 .prefix_3
+{
+	padding-left: 18.75%;
+}
+
+.container_16 .prefix_5
+{
+	padding-left: 31.25%;
+}
+
+.container_16 .prefix_6
+{
+	padding-left: 37.5%;
+}
+
+.container_16 .prefix_7
+{
+	padding-left: 43.75%;
+}
+
+.container_16 .prefix_9
+{
+	padding-left: 56.25%;
+}
+
+.container_16 .prefix_10
+{
+	padding-left: 62.5%;
+}
+
+.container_16 .prefix_11
+{
+	padding-left: 68.75%;
+}
+
+.container_16 .prefix_13
+{
+	padding-left: 81.25%;
+}
+
+.container_16 .prefix_14
+{
+	padding-left: 87.5%;
+}
+
+.container_16 .prefix_15
+{
+	padding-left: 93.75%;
+}
+
+/* =Suffix Extra Space >> Global
+--------------------------------------------------------------------------------*/
+
+.container_12 .suffix_3,
+.container_16 .suffix_4
+{
+	padding-right: 25%;
+}
+
+.container_12 .suffix_6,
+.container_16 .suffix_8
+{
+	padding-right: 50%;
+}
+
+.container_12 .suffix_9,
+.container_16 .suffix_12
+{
+	padding-right: 75%;
+}
+
+/* =Suffix Extra Space >> 12 Columns
+--------------------------------------------------------------------------------*/
+
+.container_12 .suffix_1
+{
+	padding-right: 8.333%;
+}
+
+.container_12 .suffix_2
+{
+	padding-right: 16.666%;
+}
+
+.container_12 .suffix_4
+{
+	padding-right: 33.333%;
+}
+
+.container_12 .suffix_5
+{
+	padding-right: 41.666%;
+}
+
+.container_12 .suffix_7
+{
+	padding-right: 58.333%;
+}
+
+.container_12 .suffix_8
+{
+	padding-right: 66.666%;
+}
+
+.container_12 .suffix_10
+{
+	padding-right: 83.333%;
+}
+
+.container_12 .suffix_11
+{
+	padding-right: 91.666%;
+}
+
+/* =Suffix Extra Space >> 16 Columns
+--------------------------------------------------------------------------------*/
+
+.container_16 .suffix_1
+{
+	padding-right: 6.25%;
+}
+
+.container_16 .suffix_2
+{
+	padding-right: 16.5%;
+}
+
+.container_16 .suffix_3
+{
+	padding-right: 18.75%;
+}
+
+.container_16 .suffix_5
+{
+	padding-right: 31.25%;
+}
+
+.container_16 .suffix_6
+{
+	padding-right: 37.5%;
+}
+
+.container_16 .suffix_7
+{
+	padding-right: 43.75%;
+}
+
+.container_16 .suffix_9
+{
+	padding-right: 56.25%;
+}
+
+.container_16 .suffix_10
+{
+	padding-right: 62.5%;
+}
+
+.container_16 .suffix_11
+{
+	padding-right: 68.75%;
+}
+
+.container_16 .suffix_13
+{
+	padding-right: 81.25%;
+}
+
+.container_16 .suffix_14
+{
+	padding-right: 87.5%;
+}
+
+.container_16 .suffix_15
+{
+	padding-right: 93.75%;
+}
+
+/* =Clear Floated Elements
+--------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+html body * span.clear,
+html body * div.clear,
+html body * li.clear,
+html body * dd.clear
+{
+	background: none;
+	border: 0;
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://www.positioniseverything.net/easyclearing.html */
+
+.clearfix:after
+{
+	clear: both;
+	content: '.';
+	display: block;
+	visibility: hidden;
+	height: 0;
+}
+
+.clearfix
+{
+	display: inline-block;
+}
+
+* html .clearfix
+{
+	height: 1%;
+}
+
+.clearfix
+{
+	display: block;
+}
+
+/*
+Template:	GT-FREE
+File:		gt-styles.css - This contains all the Gooey styles for the template.
+
+All the styles are separted into the following groups:
+HTML, Body - for the html and body tags
+Layout - any style that defines how the site is laid out (position and size of objects)
+Modules - styles for modules
+Nav - navigation bar
+Headings - headings like h1, h2, etc
+Text Styles - Styles for text
+Lists - unordered and ordered lists
+Forms - html forms
+Links - links
+Misc - anything that doesn't fit elsewhere
+*/
+
+/* @group HTML, Body */
+body {
+	font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
+}
+
+.field {
+    margin-left: 25px;
+}
+
+h3 {
+    margin-top: 1em;
+}
+
+td {
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#flash {
+    /*padding: 5px;
+        background-color: #ccffcc;*/
+	background-color: #CFC;
+	border: solid 1px #6C6;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#errorExplanation h2 {
+    color: red;
+}
+/* @end */
+
+/* @group Layout */
+/* Heading Styles */
+.gt-hd {
+	background-color: #242424;
+	padding-top: 1px;
+}
+.gt-hd .gt-logo {
+	margin-left: 25px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+	color: #fff;
+	font-size: 215%;
+	font-weight: normal;
+	float: left;
+	display: inline;
+}
+
+/* Body Styles */
+.gt-bd {
+	padding: 15px 35px;
+}
+.gt-cols .gt-content {
+	width: 65%;
+	float: left;
+	display: inline;
+}
+.gt-cols .gt-sidebar {
+	width: 30%;
+	float: right;
+	display: inline;
+}
+.gt-left-col {
+	width: 48%;
+	float: left;
+	display: inline;
+}
+.gt-right-col {
+	width: 48%;
+	float: right;
+	display: inline;
+}
+
+/* Footer Styles */
+.gt-footer {
+	clear: both;
+	border-top: 1px solid #aaa;
+	font-size: 93%;
+	color: #666666;
+	padding: 10px;
+	margin: 20px 35px;
+	text-align: center;
+}
+/* @end */
+
+/* @group Modules */
+/* Width Styles */
+.gt-width-33 {
+	width: 33%;
+}
+.gt-width-66 {
+	width: 66%;
+}
+.gt-width-99 {
+	width: 99%;
+}
+.gt-width-25 {
+	width: 25%;
+}
+.gt-width-50 {
+	width: 50%;
+}
+.gt-width-75 {
+	width: 75%;
+}
+.gt-width-100 {
+	width: 100%;
+}
+
+gt-content {
+    width: 80%;
+}
+
+
+/* @end */
+
+/* @group Nav */
+/* Main Navigation */
+.gt-nav {
+	margin-left: 20px;
+	clear: both;
+}
+.gt-nav ul li {
+	background-color: #ccc;
+	margin: 0 2px;
+	float: left;
+	display: inline;
+}
+.gt-nav ul li a {
+	display: block;
+	padding: .75em 2.2em;
+	font-weight: bold;
+	float: left;
+	display: inline;
+}
+.gt-nav a:link, .gt-nav a:visited {
+}
+.gt-nav a:hover {
+	color: #000;
+}
+
+
+/* @end */
+
+/* @group Headings */
+h1 {
+	font-size: 182%;
+	color: #6caa00;
+	margin-bottom: 10px;
+}
+
+
+
+/* H2 */
+h2 {
+	font-size: 161.6%;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 138.5%;
+	margin-bottom: 10px;
+}
+h4 {
+	font-size: 123.1%;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+h5 {
+	font-size: 123.1%;
+	margin-bottom: 10px;
+}
+h6 {
+	font-size: 100%;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+/* @end */
+
+/* @group Text Styles */
+address {
+	margin-bottom: 10px;
+}
+blockquote {
+	margin: 10px 40px 20px 40px;
+	font-style: italic;
+}
+code {
+	font-family: monospace;
+}
+dl {
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+dl dt {
+	font-weight: bold;
+}
+dl dd {
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+em {
+	font-style: italic;
+}
+p {
+	margin-bottom: 10px;
+	line-height: 130%;
+}
+q {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+tt {
+	font-family: monospace;
+}
+
+
+/* Custom Text Classes */
+.gt-error {
+	background-color: #cc0000;
+	padding: .5em;
+	color: #fff;
+}
+.gt-notice-box {
+	border: 3px solid #aaa;
+	padding: 1em;
+	background-color: #f5f9ea;
+}
+.gt-success {
+	background-color: #6caa00;
+	padding: .5em;
+	color: #fff;
+}
+/* @end */
+
+/* @group Lists */
+ol {
+	margin-bottom: 20px;
+}
+ol li {
+	list-style-type: decimal;
+	margin-left: 40px;
+	margin-bottom: 2px;
+}
+ul {
+	margin-bottom: 20px;
+}
+ul li {
+	list-style-type: disc;
+	margin-left: 35px;
+	margin-bottom: 2px;
+}
+/* @end */
+
+/* @group Forms */
+/* Default Form */
+
+/* @end */
+
+/* @group Links - link visited hover active */
+/* @end */
+
+/* @group Misc */
+.clear {
+	clear: both;
+}
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+/* @end */
+
+/*
+-----------------------------------------------
+Grey Box Method - Layout CSS
+----------------------------------------------- */
+
+body {
+	background: #242424;
+	border-top: 5px solid #242424;
+	font-size: 11px;
+	padding: 0 0 40px;
+}
+
+h2#page-heading {
+	background-color: #23303a;
+}
+
+div#decision-background {
+	background-color: #242424;
+	border: 1px solid #242424;
+	padding: 10px 0px 10px 0px;
+/*  margin-bottom: 10px;*/
+}
+
+/* anchors
+----------------------------------------------- */
+a {
+	color: seashell;
+	font-weight:bold;
+	text-decoration: none;
+}
+a:hover {
+	color: darkred;;
+}
+
+a.decisionlink {
+  margin-right: 1em;
+}
+
+a:hover.decisionlink {
+	color: darkred;;
+	border:none;
+}     
+
+a.decisionlink.disabled {
+	color: #000;
+	border: none;
+}
+
+a:hover.decisionlink.disabled {
+	color: #000;
+	border: 3px solid #ccc;
+	padding: 4px;
+}
+
+a:hover.printlink {
+	color: darkred;;
+	text-decoration: none;
+	border: 3px solid #2D75B5;;
+	padding: 3px 3px 3px 20px;
+}
+
+td#coursenotfound {
+	font-size:12px; 
+	background: url(/images/chalkwork/24x24/PNG/Warning.png) no-repeat 2px center gray;
+	padding: 0px 5px 0px 40px;
+	color: #fff;
+}
+
+/* 960 grid system container background
+----------------------------------------------- */
+.container_12,
+.container_16 {
+	/*background:#fff; */
+	background:#242424; 
+}
+
+
+/* headings
+----------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 {color: darkred; }
+
+h1, h2, h3, h4, h5, h6 {line-height:1.2em; margin-bottom:.3em;color: #fff;}
+h2 {margin-top:1em;}
+h5 {font-size:1.2em;}
+h6 {font-size:1em; text-transform:uppercase;}
+
+
+h1 a {
+	font-weight:normal;
+}
+
+
+/* branding
+----------------------------------------------- */
+h1#branding {
+  color: darkred;
+	font-weight:normal;
+	font-size:3em;
+	text-align:left;
+	background: transparent;
+	padding:.3em .2em;
+	margin-bottom:0;
+}
+
+
+/* page heading
+----------------------------------------------- */
+h2#page-heading {
+	font-weight:normal;
+	padding:.5em;
+	margin:0 0 10px 0;
+	border-bottom:1px solid #ccc;
+}
+
+
+h4#search-heading {
+	margin:20px 0 10px 60px;
+	align:right;
+}
+
+/* boxes
+----------------------------------------------- */
+.box {
+	background:#242424;
+	margin-bottom:20px;
+	padding:10px 10px 1px 10px;
+}
+.box h2 {
+	font-size:1em;
+	font-weight:normal;
+	text-transform:uppercase;
+	color:#fff;
+	background:#333;
+	margin:-10px -10px 0 -10px;
+	padding:6px 12px;
+}
+.box h2 a,
+.box h2 a.visible {
+	color:#fff;
+	background:#333 url("../img/switch_minus.gif") 97% 50% no-repeat;
+	display:block;
+	padding:6px 12px;
+	margin:-6px -12px;
+	border:none;
+}
+.grid_4 .box h2 a {
+	background-position: 97% 50%;
+}
+.grid_5 .box h2 a {
+	background-position: 98% 50%;
+}
+.grid_12 .box h2 a {
+	background-position: 99% 50%;
+}
+
+
+.box h2 a.hidden,
+.box h2 a.hidden:hover {
+	background-image: url("../img/switch_plus.gif");
+}
+.box h2 a:hover {
+	background-color:#111;
+}
+.block {
+	padding-top:10px;
+}
+div.menu {
+	padding:0;
+}
+div.menu h2 {
+	margin:0;
+}
+div.menu .block {
+	padding-top:0;
+}
+
+
+.line {
+  border-bottom: 1px solid seashell;
+}
+
+/* paragraphs, quotes and lists
+----------------------------------------------- */
+p {
+	margin-bottom:1em;
+}
+blockquote {
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size:1.2em;
+	padding-left:1em;
+	border-left:4px solid grey;
+}
+blockquote cite {
+	font-size:.9em;
+}
+ul, ol {
+	padding-top:0;
+}
+
+
+/* menus
+----------------------------------------------- */
+ul.menu {
+	list-style:none;
+	border-top:1px solid #242424;
+	
+}
+ul.menu li {
+	margin:0;
+}
+ul.menu li a {
+	display:block;
+	padding:4px 10px;
+	border-bottom:1px solid #242424;
+}
+ul.menu li a:hover {
+	background:#eee;
+}
+ul.menu li a:active {
+	background:#ccc;
+}
+
+
+/* submenus
+----------------------------------------------- */
+ul.menu ul {
+	list-style:none;
+	margin:0;
+}
+ul.menu ul li a {
+	padding-left:30px;
+}
+
+
+/* section menus
+----------------------------------------------- */
+ul.section {
+	border-top:0;
+	margin-bottom:0;	font-size: 70%;
+
+}
+ul.section li {
+	text-transform:capitalize;
+}
+ul.section li a {
+	background:#bbb;
+}
+ul.section li a:hover {
+	background:#aaa;
+}
+ul.section li a:active {
+	color:#fff;
+	background:#666;
+}
+ul.section li li a {
+	background:#ddd;
+	border-bottom:1px solid #eee;
+}
+ul.section li li a:hover {
+	background:#ccc;
+}
+ul.section li li a:active {
+	color:#000;
+	background:#fff;
+}
+ul.section ul li {
+	text-transform:none;
+}
+ul.section ul.current li a {
+	background:#eee;
+	border-bottom:1px solid #fff;
+}
+ul.section ul.current li a:hover {
+	background:#ddd;
+}
+ul.section ul.current li a:active {
+	background:#fff;
+}
+ul.section li a.current {
+	color:#fff;
+	background:#666;
+}
+ul.section li a.current:hover {
+	background:#555;
+}
+ul.section li a.current:active {
+	background:#444;
+}
+ul.section li a.active {
+	background:#fff;
+	cursor:default;
+}
+ul.section li.current > a.active,
+ul.section li.current > a.active:hover {
+	color:#fff;
+	background:#666;
+	cursor:default;
+}
+
+
+/* forms
+----------------------------------------------- */
+form {
+	/*
+	  took this out as it was causing problems with displaying forms in fieldsets
+	  overflow:hidden;
+	*/
+}
+
+fieldset {
+/*  border: 1px solid grey;*/
+/*  margin:0; background: black url(/images/admit-bg.jpg) repeat-x 0 top;*/
+  background-color: #242424;
+  border: 1px solid #181818;
+  padding: 10px;
+  padding-top: 20px;
+  padding-top: 0\8;
+  position:relative; 
+  margin: 1em 0em 1em 0em;
+  /* IE hack for margin, difference of about 1em between ff and ie */
+  margin: 3em 0em 3em 0em\8;
+}
+
+.outstanding_decisions {
+  padding-top:0;
+  background-color: #303030;
+}
+
+legend {
+  position: relative;
+	font-size:1.1em;
+	padding:.5em .8em;
+	background: #242424;
+	border:1px solid #181818;
+	border-bottom: 2px solid #181818;     
+  top: -1.3em\8;
+}
+
+.fatlegend {
+  font-size: 1em; 
+  top: -1.8em\8;
+}
+
+fieldset table {
+  margin-top: 1em;
+  /* Hack for IE, dont apply this margin */
+  margin-top: 0em\8;
+}
+
+fieldset.login p {
+	margin-bottom:1em;
+	margin-top:0pt;
+}
+fieldset p label {
+	width:98%;
+}
+fieldset p input {
+	width:98%;
+}
+fieldset p select {
+	width:99%;
+}
+fieldset.login p label {
+	float:left;
+	line-height:2em;
+	margin-right:3%;
+	text-align:right;
+	width:32%;
+}
+fieldset.login p input {
+	width:60%;
+}
+fieldset.login input.button {
+	margin-left:35%;
+}
+form p.notice {
+	font-weight:bold;
+}
+input.search.text {
+	width:66%;
+}
+input.search.button {
+	width:28%;
+	margin-left:2%;
+}
+
+input.search_form {
+  background: no-repeat 2px center #2D75B5;
+	padding: 7px 20px 7px 20px;
+	font-size: 1.3em;
+	border: 1px solid #181818;
+	color: seashell;
+	font-weight:bold;
+	align: right;
+	margin: 10px 10px 10px 175px;
+}
+input:hover.search_form {
+	color: #333;
+	font-weight:bold;
+	text-decoration: none;
+	border: 4px solid #181818;
+	padding: 4px 17px 4px 17px;
+}
+
+input.search_right {display:inline;
+  clear:left;
+  float:left;
+	background: no-repeat 2px center #2D75B5;
+	padding: 7px 20px 7px 20px;
+	font-size: 1.3em;
+	border: 1px solid #181818;
+	color: seashell;
+	font-weight:bold;
+	margin: 20px 0px 0px 180px;
+}
+input:hover.search_right {
+	color: #333;
+	font-weight:bold;
+	text-decoration: none;
+	border: 4px solid #181818;
+	padding: 4px 17px 4px 17px;
+}
+
+input.neat_search {display:block;
+	background: no-repeat 2px center #2D75B5;
+	padding: 7px 20px 7px 20px;
+	font-size: 1.3em;
+	border: 1px solid #181818;
+	color: seashell;
+	font-weight:bold;
+	margin: 10px 0px 0px 1.5em;
+}
+input:hover.neat_search {
+	color: #333;
+	font-weight:bold;
+	text-decoration: none;
+	border: 4px solid #181818;
+	padding: 4px 17px 4px 17px;
+}
+
+td a.simple_button {
+	font-size:1em;
+	margin:0;
+}
+
+.simple_button {
+  	background: no-repeat 2px center darkred;
+	padding: 6px 16px;
+	font-size: 1.3em;
+	border: 1px solid #181818;
+	color: seashell;
+	font-weight:bold;
+	margin: 20px 0px 10px 0px;
+}
+
+:hover.simple_button {
+	color: #333;
+	font-weight:bold;
+	text-decoration: none;
+	border: 4px solid #181818;
+	padding: 2px 13px;
+}
+
+/* site information
+----------------------------------------------- */
+#site_info .box {
+	color:#747474;
+	font-weight: bold;
+	margin-bottom:10px;
+	background-color: #242424;
+	border-bottom: 2px solid #2D75B5;
+	padding: 4px;
+}
+#site_info a {
+	color:#fff;
+}
+#site_info a:hover {
+	color:#2D75B5;;
+}
+
+.live_env {
+	font-weight: bold;
+	color: #A60000;
+}
+
+.test_env {
+	font-weight: bold;
+	color: green;
+}
+
+.container_12 div .block {
+	border: 1px solid;
+}
+
+
+/*
+-----------------------------------------------
+Navigation
+----------------------------------------------- */
+
+/* navigation (horizontal subnavigation)
+----------------------------------------------- */
+ul.nav,
+ul.nav * { margin:0;padding:0;}
+ul.nav {
+  position:relative;
+  background: #23303a;
+  max-width:100%;
+  height:3.2em;
+  }
+ul.nav li {
+	cursor:pointer;
+	float:left;
+	text-align:center;
+	list-style-type:none;
+	font-weight:normal;
+}
+ul.nav li ul {
+	cursor:default;
+	width:100%;
+	max-width:100%;
+	position:absolute;
+	height:auto;
+	top:2.5em;
+	background-position:0 0 !important;
+	left:-9000px;
+}
+ul.nav li ul li {
+	padding:0;
+	border:none;
+	width:auto;
+	max-width:none;
+}
+ul.nav li a {
+	color:#fff;
+	background:#666;
+	font-weight:bold;
+	text-decoration:none;
+	display:block;
+	float:left;
+	padding:0 1em;
+	height:2.4em;
+	line-height:2.5em;
+}
+ul.nav li ul li a {
+	position:relative !important; /* ie Mac */
+	cursor:pointer !important;
+	white-space:nowrap;
+	line-height:2em;
+	height:2em;
+	font-weight:normal;
+	color:#666;
+	background-position:0 50% !important;
+}
+
+ul.nav li:hover a,
+ul.nav li a:hover,
+ul.nav li a:focus {color:#000; background:#ccc;}
+ul.nav li a:active {color:#666; background:#fff;}
+ul.nav li:hover ul {left:0;z-index:10}
+ul.nav li ul,
+ul.nav li {background: #23303a}
+ul.nav li:hover ul li a {color:#444;}
+ul.nav li:hover ul li a:hover {color:#000; background:#fff;}
+ul.nav li:hover ul li a:active {color:#666; background:#fff;}
+
+ul.nav li.current a {color:#666; background:#fff; cursor:default; font-weight:bold;}
+ul.nav li.current ul {left:0;z-index:5}
+ul.nav li.current ul,
+ul.nav li.current {background:#ccc !important}
+ul.nav li.current ul li a {color:#444; background:#ccc; font-weight:normal;}
+ul.nav li.current ul li a:hover {color:#000; background:#fff;}
+ul.nav li ul li.current a,
+ul.nav li ul li.current a:hover,
+ul.nav li.current:hover ul li a:active {color:#666; background:#fff;}
+
+
+/* navigation (vertical subnavigation)
+----------------------------------------------- */
+ul.nav {
+  background: #2C2C2C;
+  border-top:2px solid #181818;
+  border-bottom: 2px solid #2D75B5;
+}
+ul.main li {
+  position:relative;
+  top:0;
+  left:0;
+	padding-top: 0;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	border-left:2px solid #181818;
+}
+ul.main li ul {
+  border-top:0;
+}
+ul.main li ul li {
+  float:left;
+}
+ul.main li a {
+	height:2.4em;
+	line-height:2.5em;
+	color: fff;
+	background: #2C2C2C;
+
+}
+ul.main li ul li a {
+  width:12em;
+  height:2em;
+  text-align:left;
+  color:#fff;
+  background:#444;
+}
+ul.main li a:focus {color:#fff; background:#666;}
+ul.main li ul li a:hover {
+  color:#fff;
+  background:#555;
+}
+
+
+ul.main li:hover a {
+  color: #163c5d;
+  background: #fff;
+}
+ul.main li:hover ul li a {color:#fff;}
+ul.main li:hover ul li a:hover {color:#fff; background:#444;}
+ul.main li:hover a:active {background:#444;}
+ul.main li:hover ul li a:active {color:#fff; background:#222;}
+
+/* panels */
+.panel {
+	display: block;
+	float: left;
+	margin: 0px 10px 20px 10px;
+	width: 450px;
+}
+
+.panel.full {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.panel.left {
+  float: left;
+}
+
+.panel.right {
+  float: right;
+}
+
+.panel .header {
+	position: relative;
+	margin: 0px;
+	padding: 5px;
+	background-color: #242424;
+	border: 1px solid #242424;
+}
+
+.panel .header h4 {
+	margin: 0px;
+}
+
+.panel .header .actions {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.panel .header .actions .action {
+	display: block;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.panel .header .actions .action.minimise {
+	background-image: url("../images/chalkwork/16x16/PNG/Arrow (Up).png");
+}
+
+.panel .header .actions .action.maximise {
+	background-image: url("../images/chalkwork/16x16/PNG/Arrow (Down).png");
+}
+
+.panel .body {
+	margin: 0px;
+	padding: 5px; 
+	border: 1px solid #242424;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+
+.panel ul {
+  margin-bottom: 0px;
+}
+
+.panel ul li {
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+}
+
+.panel p {
+	padding-left: 5px;
+	margin: 0px;
+}
+
+/* Codes List  */
+
+ul.codeslist.menu li {
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+/* secondary list
+----------------------------------------------- */
+ul.nav li.secondary {
+	float:right;
+	color:#cde;
+	background:transparent !important;
+}
+ul.nav li.secondary span.status {
+	float:left;
+	padding:0 1em;
+	line-height:2.77em;
+	height:2.77em;
+  font-size:0.9em;
+}
+ul.nav li.secondary span.status a {
+	float:none;
+	display:inline;
+	padding:0;
+	height:auto;
+	line-height:auto;
+	color:#cde;
+	background:transparent;
+}
+ul.nav li.secondary span.status a:hover {
+	color:#fff;
+	background:transparent;
+}
+ul.nav li.secondary span.status span {
+	text-transform:capitalize;
+}
+ul.nav li.secondary:hover a {
+	color:#fff;
+	background:#666;
+}
+ul.nav li.secondary:hover a:hover {
+	background:#555;
+}
+ul.nav li.secondary:hover a:active {background:#444;}
+ul.codeslist li {
+	font-size: 1.5em;
+	list-style-type: none;
+	padding: 5px 0;
+	margin:0
+}
+
+/*ul.codeslist a:link, a:visited {
+	color: darkred;;
+	text-decoration: none;
+	font-weight: bold;
+	border-bottom: 1px dotted;
+} */
+ul.codeslist a:hover {
+	text-decoration: none;
+	color: #163c5d;
+}
+
+/* Course instance page styling -- blocking out the areas Edited by mearso 2009-05-08 */
+
+
+
+ul.courseinfo li {
+	list-style-type: none;
+	margin: 0;
+	padding: 6px 5px 5px 6px;
+}
+
+/* Definition List styling */
+
+
+dl.courseinfo {
+/*border: 1px solid grey;*/
+margin: 2em 0;
+}
+
+
+dl.courseinfo lh h2{
+	padding: .5em;
+	margin: 0;
+}
+
+dl.courseinfo dt {
+width: 11em;
+float: left;
+margin: 0 0 0 0;
+padding:.5em;
+height: 15px;*/
+/*border-top: 1px solid grey;*/
+}
+
+dl.courseinfo dd {
+
+margin: 0 0 0 12em;
+padding: .5em;
+height: 15px;
+/*border-top: 1px solid grey;*/
+
+}
+
+
+/* tooltip styling */
+
+.tooltip {
+	display:none;
+	background-color: #242424;
+	border: 2px solid #242424;
+	z-index: 100;
+}
+
+.tooltip .header {
+  display: block;
+  background-color: #242424;
+  border-left: 1px solid #242424;
+  border-right: 1px solid #242424;
+  border-top: 1px solid #242424;
+  padding:5px;
+  line-height: 1.2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: darkred;
+}
+
+.tooltip .body {
+}
+
+/*
+THIS IS THE RESET CSS FILE, DO NOT MODIFY THIS FILE.
+IF YOU NEED TO MAKE CHANGES TO ANY OF THESE STYLES, MAKE THE CHANGES IN OVERRIDE.CSS
+
+Copyright (c) 2007, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.3.0
+*/
+/*reset.css*/body{color:#E5E4E0;background:black;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup,sub{line-height:-1px;vertical-align:text-top;}sub{vertical-align:text-bottom;}input, textarea, select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+/*fonts.css*/body {font:13px/1.22 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:99%;}
+
+/* -------------------------------------------------------------- 
+  
+   Boilerplate reset.css
+   * Resets default browser CSS.
+   
+-------------------------------------------------------------- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+body { line-height: 1.5; background: #fff; margin: 1.5em 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight:400; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+a img { border: none; }
+input,textarea { margin: 0; }
+
+/* Removes Firefox imposed outline */
+a { outline: none; }
+
+/* Clearing floats without extra markup  */
+.wrapper { display: inline-block; }
+.wrapper:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .wrapper { height: 1%; }
+.wrapper { display: block; }
+
+body { background-color: #242424; color: seashell; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 30px;
+  vertical-align: center;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:hover { color: #fff; background-color:darkgreen; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #ededed;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: gray;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+.black {
+border: black dashed 2px; 
+width: 10px; 
+padding: 10px;	
+}
+.active{
+	background-color: #ededed;
+border: black solid 2px; 
+width: 10px; 
+padding: 10px;
+}
+
+.floatright {
+border-left:1px solid gray;
+float:right;
+max-width:36em;
+padding:1em;
+}
+
+
+
+
+/* table
+----------------------------------------------- */
+table {
+	width:100%;
+	border: 1px solid #181818;
+	margin-bottom:10px;
+}
+
+.tableheader {border-bottom: 1px solid lime;}
+
+tfoot th,
+tfoot td {
+	color: #768088;
+}
+
+.even, tr.even { background: #282828; }
+.odd, tr.odd { background: #303030; }
+
+.match_row:hover{
+  background-color: #242424;
+}
+
+
+/* adding chalkwork */
+
+td.refresh a, td.send a, td.view a, td.add a, td.delete a, td.edit a, td.flag a, td.reflag a, td.save a, td.dupe a, td.naflag span, td.money a{
+	border-bottom: none;
+	display: block;
+	position: relative;
+	height: 24px;
+	width: 24px;
+	text-indent: -9999px;
+
+}
+td.refresh a{
+	background: url(/images/chalkwork/16x16/PNG/Refresh.png) no-repeat center center;
+}
+td.send a{
+	background: url(/images/chalkwork/24x24/PNG/Confirm.png) no-repeat center center;
+}
+td.view a{
+	background: url(/images/chalkwork/16x16/PNG/Info.png) no-repeat center center;
+} 
+td.dupe a{
+	background: url(/images/chalkwork/16x16/PNG/Group.png) no-repeat center center;
+}  
+td.add a{
+	background: url(/images/chalkwork/16x16/PNG/Add.png) no-repeat center center;
+	cursor: pointer;
+}
+td.delete a{
+	background: url(/images/chalkwork/16x16/PNG/Delete.png) no-repeat center center;
+}
+td.edit a{
+	background: url(/images/chalkwork/16x16/PNG/Edit.png) no-repeat center center;
+}
+td.flag a{
+	background: url(/images/green_flag.png) no-repeat center center;
+}
+td.reflag span{
+	background: url(/images/blue_flag.png) no-repeat center center;
+} 
+
+td.naflag{
+	background: url(/images/red_flag.png) no-repeat center center;   
+}   
+
+td.save a{
+	background: url(/images/chalkwork/16x16/PNG/Save.png) no-repeat center center;
+}
+
+td b {
+  color: seashell;
+}
+
+td.money a{
+	background: url(/images/chalkwork/16x16/PNG/Coins.png) no-repeat center center;   
+}
+
+th{
+	font-weight: bold;
+	color: grey;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+td, th {
+	border-bottom: 1px solid #181818;
+	padding:.2em 1em;
+	text-align: left;
+	height:24px;
+}
+
+.parentTable {
+	border: none;
+}
+
+.parentTable th,
+.parentTable td {
+  border-width: 1px;
+	border-style: solid; 
+	border-color: #181818;
+}
+
+.parentTable td {
+	padding: 0px;
+}
+
+.parentTable .noleftbottomborder {
+	border-bottom: none;
+	border-left: none;
+}
+
+.parentTable .noleftbottomtopborder {
+	border-bottom: none;
+	border-left: none;
+	border-top: none;
+}
+
+.parentTable .noborder {
+	border: none;
+}
+
+.nestedTable {
+	margin: 0px;
+	border: none;
+}
+
+.nestedTable th {
+	padding: 0px 12px;
+	border: none;
+}
+
+.nestedTable td {
+	padding: 0px 12px;
+	border-width: 1px 0px 0px 0px;
+}  
+
+/* Quercus Matches Tables */
+.quercus_matches td {
+	vertical-align: top; 
+	padding-top: 5px; 
+	padding-bottom: 0;  
+}
+
+/* TIMELINE */
+.success {
+  background-color: #DFF0D8;
+  color: #468847;  
+	border: 1px solid #181818;
+} 
+
+.comment {
+  background-color: #D9EDF7;
+  color: #3A87AD;  
+	border: 1px solid #181818;
+}   
+
+.reject {
+  background-color: #F2DEDE; 
+	border: 1px solid #181818;      
+  color: #B94A48;   	
+}   
+
+.timeline {    
+	margin-bottom: 5px;
+    font-size: 1.1em;
+    margin-top: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+/*
+	960 Grid System ~ Text CSS.
+	Learn more ~ http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/* =Basic HTML
+--------------------------------------------------------------------------------*/
+
+body
+{
+	font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+a:focus
+{
+	outline: 1px dotted invert;
+}
+
+hr
+{
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 1px 0 0;
+	clear: both;
+	height: 0;
+}
+
+/* =Headings
+--------------------------------------------------------------------------------*/
+
+h1
+{
+	font-size: 25px;
+}
+
+h2
+{
+	font-size: 23px;
+}
+
+h3
+{
+	font-size: 21px;
+}
+
+h4
+{
+	font-size: 19px;
+}
+
+h5
+{
+	font-size: 17px;
+}
+
+h6
+{
+	font-size: 15px;
+}
+
+/* =Spacing
+--------------------------------------------------------------------------------*/
+
+ol
+{
+	list-style: decimal;
+}
+
+ul
+{
+	list-style: square;
+}
+
+li
+{
+	margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+address,
+fieldset
+{
+	margin-bottom: 20px;
+}
+
+.editpage {display:block;
+ font-weight:bold;
+ clear:left;
+ float:left;
+ width:8em;
+ padding-right:1em;
+ text-align:right;
+ }
+ 
+ input.chunky_link {
+ 	text-align: left;
+ 	font-size: 1.2em;
+ 	font-weight: bold;
+ 	color: $uswRed;
+ 	border: none;
+ 	background: image-url('rightarrow.png') right no-repeat;
+ 	margin: 0em;
+ 	padding: 0.1em 1.5em 0.3em 0.3em;
+ }
+
+ input:hover.chunky_link {
+ 	color: $uswDarkShade;
+ 	text-decoration: underline;
+ }
