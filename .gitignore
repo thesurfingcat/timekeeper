@@ -1,8 +1,0 @@
-public/system/**/*
-*.log
-.DS_Store
-config/database.yml
-config/sphinx.yml
-tmp/*
-db/schema.rb
-log/development.log
